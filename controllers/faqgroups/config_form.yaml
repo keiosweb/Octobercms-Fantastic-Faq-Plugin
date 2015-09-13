@@ -3,7 +3,7 @@
 # ===================================
 
 # Record name
-name: FaqGroup
+name: laminsanneh.fantasticfaq::lang.controller.faqgroup
 
 # Model Form Field configuration
 form: @/plugins/laminsanneh/fantasticfaq/models/faqgroup/fields.yaml
@@ -16,16 +16,16 @@ defaultRedirect: laminsanneh/fantasticfaq/faqgroups
 
 # Create page
 create:
-    title: Create FaqGroups
+    title: laminsanneh.fantasticfaq::lang.controller.createfaqgroups
     redirect: laminsanneh/fantasticfaq/faqgroups/update/:id
     redirectClose: laminsanneh/fantasticfaq/faqgroups
 
 # Update page
 update:
-    title: Edit FaqGroups
+    title: laminsanneh.fantasticfaq::lang.controller.editfaqgroups
     redirect: laminsanneh/fantasticfaq/faqgroups
     redirectClose: laminsanneh/fantasticfaq/faqgroups
 
 # Preview page
 preview:
-    title: Preview FaqGroups
+    title: laminsanneh.fantasticfaq::lang.controller.previewfaqgroups

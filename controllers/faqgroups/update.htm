@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>">FaqGroups</a></li>
+        <li><a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>"><?= trans('laminsanneh.fantasticfaq::lang.controller.faqgroups') ?></a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -21,9 +21,9 @@
                     data-request-data="redirect:0"
                     data-hotkey="ctrl+s"
                     data-hotkey-mac="cmd+s"
-                    data-load-indicator="Saving FaqGroup..."
+                    data-load-indicator="<?= trans('laminsanneh.fantasticfaq::lang.controller.savingfaqgroup') ?>"
                     class="btn btn-primary">
-                    <u>S</u>ave
+                    <?= trans('laminsanneh.fantasticfaq::lang.controller.save') ?>
                 </button>
                 <button
                     type="button"
@@ -33,17 +33,17 @@
                     data-hotkey-mac="cmd+enter"
                     data-load-indicator="Saving FaqGroup..."
                     class="btn btn-default">
-                    Save and Close
+                    <?= trans('laminsanneh.fantasticfaq::lang.controller.saveandclose') ?>
                 </button>
                 <button
                     type="button"
                     class="oc-icon-trash-o btn-icon danger pull-right"
                     data-request="onDelete"
-                    data-load-indicator="Deleting FaqGroup..."
-                    data-request-confirm="Do you really want to delete this faqgroup?">
+                    data-load-indicator="<?= trans('laminsanneh.fantasticfaq::lang.controller.deletingfaqgroup') ?>"
+                    data-request-confirm="<?= trans('laminsanneh.fantasticfaq::lang.controller.confirmdeletefaqgroup') ?>">
                 </button>
                 <span class="btn-text">
-                    or <a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>">Cancel</a>
+                    <?= trans('laminsanneh.fantasticfaq::lang.controller.or') ?> <a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>"><?= trans('laminsanneh.fantasticfaq::lang.controller.cancel') ?></a>
                 </span>
             </div>
         </div>
@@ -53,6 +53,6 @@
 <?php else: ?>
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-    <p><a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>" class="btn btn-default">Return to faqgroups list</a></p>
+    <p><a href="<?= Backend::url('laminsanneh/fantasticfaq/faqgroups') ?>" class="btn btn-default"><?= trans('laminsanneh.fantasticfaq::lang.controller.returntofaqgroup') ?></a></p>
 
 <?php endif ?>

@@ -1,0 +1,42 @@
+<?php
+
+return [
+    'strings'     => [
+        'plugin_desc'            => 'Wtyczka FAQ wspierająca wiele grup',
+        'component_name'         => 'Komponent FAQ',
+        'component_desc'         => 'Umożliwia wyświetlanie pytań podanej grupy FAQ',
+        'faqgroup_title'         => 'Grupa FAQ',
+        'faqgroup_desc'          => 'Grupa FAQ zawierająca pytania',
+        'inject_bootstrap_title' => 'Wstrzykuj pliki bootstrapa',
+        'inject_bootstrap_desc'  => 'Wybierz, jeśli chces wszystkiwać pliki js i css bootstrapa',
+        'all_form_groups'        => 'Wszystkie grupy',
+        'faq_groups'             => 'Grupy FAQ',
+        'faqgroup_name_label'    => 'Nazwa grupy FAQ',
+        'question_title_label'   => 'Tytuł pytania',
+        'question_body_label'    => 'Odpowiedź na pytanie',
+    ],
+    'permissions' => [
+        'tab'         => 'Fantastic FAQ',
+        'manage_faqs' => 'Zarządzanie FAQ',
+    ],
+    'controller'  => [
+        'create'           => 'Stwórz',
+        'save'             => 'Zapisz',
+        'saveandclose'     => 'Zapisz i zamknij',
+        'createandclose'   => 'Stwórz i zamknij',
+        'returntofaqgroup' => 'Powrót do listy grup FAQ',
+        'creatingfaqgroup' => 'Tworzenie grupy FAQ...',
+        'savingfaqgroup'   => 'Zapisywanie grupy FAQ...',
+        'deletingfaqgroup' => 'Usuwanie grupy FAQ...',
+        'or'               => 'lub',
+        'cancel'           => 'Anuluj',
+        'faqgroup'         => 'Grupa FAQ',
+        'faqgroups'        => 'Grupy FAQ',
+        'createfaqgroups'  => 'Stwórz Grupy FAQ',
+        'editfaqgroups'    => 'Edytuj Grupy FAQ',
+        'previewfaqgroups' => 'Podgląd Grup FAQ',
+        'managefaqgroups'  => 'Zarządzaj Grupami FAQ',
+        'questions'        => 'Pytania',
+        'newfaqgroup' => 'Nowa Grupa FAQ',
+    ],
+];

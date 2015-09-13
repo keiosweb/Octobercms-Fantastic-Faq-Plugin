@@ -9,7 +9,7 @@ list: @/plugins/laminsanneh/fantasticfaq/models/faqgroup/columns.yaml
 modelClass: LaminSanneh\FantasticFaq\Models\FaqGroup
 
 # List Title
-title: Manage FaqGroups
+title: laminsanneh.fantasticfaq::lang.controller.managefaqgroups
 
 # Link URL for each record
 recordUrl: laminsanneh/fantasticfaq/faqgroups/update/:id
