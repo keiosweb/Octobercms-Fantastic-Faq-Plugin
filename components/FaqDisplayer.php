@@ -9,8 +9,8 @@ class FaqDisplayer extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'FaqDisplayer Component',
-            'description' => 'Gives access to a single faq group to display its questions'
+            'name'        => 'laminsanneh.fantasticfaq::lang.strings.component_name',
+            'description' => 'laminsanneh.fantasticfaq::lang.strings.component_desc'
         ];
     }
 
@@ -18,14 +18,14 @@ class FaqDisplayer extends ComponentBase
     {
         return [
             'faqGroup' => [
-                'title'       => 'Faq group',
-                'description' => 'An Faq Group containing questions',
+                'title'       => 'laminsanneh.fantasticfaq::lang.strings.faqgroup_title',
+                'description' => 'laminsanneh.fantasticfaq::lang.strings.faqgroup_desc',
                 'type'        => 'dropdown',
                 'default'     => ''
             ],
             'injectBootstrapAssets' => [
-                'title'       => 'Inject Bootstrap Assets',
-                'description' => 'Whether To Insert bootstrap css and javascript files',
+                'title'       => 'laminsanneh.fantasticfaq::lang.strings.inject_bootstrap_title',
+                'description' => 'laminsanneh.fantasticfaq::lang.strings.inject_bootstrap_desc',
                 'type'        => 'checkbox',
                 'default'     => true,
             ]

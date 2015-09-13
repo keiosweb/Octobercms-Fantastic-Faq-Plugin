@@ -18,15 +18,16 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'FantasticFaq',
-            'description' => 'An FAQ plugin with singular manageable instances',
+            'description' => 'laminsanneh.fantasticfaq::lang.strings.plugin_desc',
             'author'      => 'LaminSanneh',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-leaf',
         ];
     }
 
-    public function registerComponents(){
+    public function registerComponents()
+    {
         return [
-            '\LaminSanneh\FantasticFaq\Components\FaqDisplayer' => 'faqDisplayer'
+            '\LaminSanneh\FantasticFaq\Components\FaqDisplayer' => 'faqDisplayer',
         ];
     }
 
@@ -35,7 +36,10 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'laminsanneh.fantasticfaq.access_faqgroups'       => ['tab' => 'Fantastic FAQ', 'label' => 'Manage the FAQs']
+            'laminsanneh.fantasticfaq.access_faqgroups' => [
+                'tab'   => 'laminsanneh.fantasticfaq::lang.permissions.tab',
+                'label' => 'laminsanneh.fantasticfaq::lang.permissions.manage_faqs',
+            ],
         ];
     }
 
@@ -43,22 +47,21 @@ class Plugin extends PluginBase
     {
         return [
             'fantasticfaq' => [
-                'label'       => 'Faq Groups',
+                'label'       => 'laminsanneh.fantasticfaq::lang.strings.faq_groups',
                 'url'         => Backend::url('laminsanneh/fantasticfaq/faqgroups'),
                 'icon'        => 'icon-bullhorn',
                 'permissions' => ['laminsanneh.fantasticfaq.*'],
                 'order'       => 500,
-
-                'sideMenu' => [
+                'sideMenu'    => [
                     'faqgroups' => [
-                        'label'       => 'All Form Groups',
+                        'label'       => 'laminsanneh.fantasticfaq::lang.strings.all_form_groups',
                         'url'         => Backend::url('laminsanneh/fantasticfaq/faqgroups'),
                         'icon'        => 'icon-pencil',
                         'permissions' => ['laminsanneh.fantasticfaq.access_faqgroups'],
-                    ]
-                ]
+                    ],
+                ],
 
-            ]
+            ],
         ];
     }
 

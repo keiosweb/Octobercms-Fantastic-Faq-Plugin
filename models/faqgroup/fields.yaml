@@ -4,4 +4,4 @@
 
 fields:
     name:
-        label: The name of the Faq Group
+        label: laminsanneh.fantasticfaq::lang.strings.faqgroup_name_label
